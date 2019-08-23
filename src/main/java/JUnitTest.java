@@ -37,7 +37,7 @@ public class JUnitTest {
         assertEquals(acutalResult, expectedResult);
     }
 
-    //Test findMin function
+    //Test findMin function for valid arrays
     @Test
     public void test_ValidArrays_findMin() {
         Finder finder = new Finder();
