@@ -39,7 +39,7 @@ public class JUnitTest {
 
     //Test findMin function
     @Test
-    public void test_findMin() {
+    public void test_ValidArrays_findMin() {
         Finder finder = new Finder();
         //Test For Correct Answer
         int[] array = new int[]{-1,3,2,0,5};
@@ -47,16 +47,10 @@ public class JUnitTest {
         int actualResult = finder.findMin(array);
         assertEquals(actualResult,expectedResult);
 
-        //Test when array is null
-        int[] nullArray = null;
-        Integer nullExpectedResult = null;
-        Integer result = finder.findMin(nullArray);
-        assertEquals(result, nullExpectedResult);
-
-        //Test when array is empty
-        array = new int[] {};
-        result = finder.findMax(array);
-        assertEquals(result, nullExpectedResult);
+        array = new int[] {-1000, -500, -1090, -10};
+        expectedResult = -1090;
+        actualResult = finder.findMin(array);
+        assertEquals(actualResult, expectedResult);
     }
     //Test when array is null
     @Test
