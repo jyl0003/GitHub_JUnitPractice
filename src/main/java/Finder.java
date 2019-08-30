@@ -1,7 +1,9 @@
 public class Finder {
+    //Basic constructor that signals that Finder class has been initialized.
     public Finder() {
         System.out.println(">>>Initializing the Finder Class...");
     }
+    //Function that finds the max int value in an array
     public Integer findMax(int[] array) {
         if (array == null || array.length == 0) {
             return null;
@@ -14,7 +16,7 @@ public class Finder {
         }
         return max;
     }
-
+    //Function that returns the minimum value in an array
     public Integer findMin(int[] array) {
         if (array == null || array.length == 0) {
             return null;
