@@ -3,10 +3,7 @@ public class Finder {
         System.out.println(">>>Initializing the Finder Class...");
     }
     public Integer findMax(int[] array) {
-        if (array == null) {
-            return null;
-        }
-        if (array.length == 0){
+        if (array == null || array.length == 0) {
             return null;
         }
         int max = array[0];
@@ -19,10 +16,7 @@ public class Finder {
     }
 
     public Integer findMin(int[] array) {
-        if (array == null) {
-            return null;
-        }
-        if (array.length == 0) {
+        if (array == null || array.length == 0) {
             return null;
         }
         int min = array[0];

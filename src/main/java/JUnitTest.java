@@ -8,8 +8,8 @@ public class JUnitTest {
     public void test__validArrays_findMax() {
         Finder finder = new Finder();
         //Test For Correct Answer
-        int[] array = new int[]{-1,3,2,0,5};
-        int expectedResult = 5;
+        int[] array = new int[]{100,3,2,0,5};
+        int expectedResult = 100;
         int actualResult = finder.findMax(array);
         assertEquals(actualResult,expectedResult);
 
